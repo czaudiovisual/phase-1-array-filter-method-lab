@@ -7,15 +7,14 @@
 //     })
 // }
 // console.log(findMatching(drivers, 'Bobby'))
-
+// const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby']
 
 function findMatching(drivers, names){
     return drivers.filter(function(name){
-        return name.toLowerCase().indexOf(names.toLowerCase()) === 0;
+        return name.toLowerCase() === names.toLowerCase();
     })
 }
 findMatching(drivers, 'Bobby');
-
 
 
 function fuzzyMatch(drivers, letters) {
